@@ -1,9 +1,8 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
+#Example: https://github.com/alen-ghub/lab11-BZ-AR.git
+# Partner 1: Brian Zheng
+# Partner 2: Alen Rodriguez
 
-One function per operation, in order.
-"""
+
 import math
 
 def square_root(a):
@@ -48,4 +47,3 @@ def div(a, b):
 
 def exp(a, b):
     return a ** b
-
