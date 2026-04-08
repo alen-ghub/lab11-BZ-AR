@@ -1,14 +1,21 @@
+# https://github.com/alen-ghub/lab11-BZ-AR
+# Partner 1: Brian Zheng
+# Partner 2: Alen Rodriguez
+
 import unittest
 from calculator import *
 
 class TestCalculator(unittest.TestCase):
-    ######### Partner 2
-    # def test_add(self): # 3 assertions
-    #     fill in code
+    #Partner 2
+    def test_add(self): # 3 assertions
+        self.assertEqual(add(1, 2), 3)
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(10, 20), 30)
 
-    # def test_subtract(self): # 3 assertions
-    #     fill in code
-    # ##########################
+    def test_subtract(self):
+        self.assertEqual(subtract(2, 1), 1)
+        self.assertEqual(subtract(30, 20), 10)
+        self.assertEqual(subtract(100, 90), 10)
 
     ######## Partner 1
     # def test_multiply(self): # 3 assertions
@@ -19,19 +26,18 @@ class TestCalculator(unittest.TestCase):
     # ##########################
 
     ######## Partner 2
-    # def test_divide_by_zero(self): # 1 assertion
-    #     # call division function inside, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #     div(0, 5)
-    #     fill in code
+    def test_divide_by_zero(self): # 1 assertion
+        with self.assertRaises(ZeroDivisionError):
+            div(0, 5)
 
-    # def test_logarithm(self): # 3 assertions
-    #     fill in code
+    def test_logarithm(self): # 3 assertions
+        self.assertEqual(logarithm(10, 10), 1)
+        self.assertEqual(logarithm(2, 1), 0)
+        self.assertEqual(logarithm(2, 8), 3)
 
-    # def test_log_invalid_base(self): # 1 assertion
-    #     # use same technique from test_divide_by_zero
-    #     fill in code
-    # ##########################
+    def test_log_invalid_base(self): # 1 assertion
+        with self.assertRaises(ValueError):
+            log(1, 10)
     
     ######## Partner 1
     # def test_log_invalid_argument(self): # 1 assertion
