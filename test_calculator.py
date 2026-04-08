@@ -1,8 +1,3 @@
-# Example: https://github.com/alen-ghub/lab11-BZ-AR.git
-# Partner 1: Brian Zheng
-# Partner 2: Alen Rodriguez
-
-
 # https://github.com/alen-ghub/lab11-BZ-AR
 # Partner 1: Brian Zheng
 # Partner 2: Alen Rodriguez
@@ -17,6 +12,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(add(1, 2), 3)
         self.assertEqual(add(2, 3), 5)
         self.assertEqual(add(10, 20), 30)
+
 
     def test_subtract(self):
         self.assertEqual(subtract(2, 1), 1)
@@ -37,6 +33,7 @@ class TestCalculator(unittest.TestCase):
     # ##########################
 
     ######## Partner 2
+
     def test_divide_by_zero(self):  # 1 assertion
         with self.assertRaises(ZeroDivisionError):
             div(0, 5)

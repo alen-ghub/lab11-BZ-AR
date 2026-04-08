@@ -1,7 +1,6 @@
-#Example: https://github.com/alen-ghub/lab11-BZ-AR.git
+# https://github.com/alen-ghub/lab11-BZ-AR.git
 # Partner 1: Brian Zheng
 # Partner 2: Alen Rodriguez
-
 
 import math
 
@@ -15,13 +14,10 @@ def square_root(a):
 
 def hypotenuse(a, b):
     return math.hypot(a, b)
+
 def add(a, b):
     return a + b
 
-
-# First example
-def add(a, b):
-    return a + b
 
 def subtract(a,b):
     return a - b
